@@ -1,0 +1,104 @@
+.list_container {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  .row {
+    align-items: center;
+    padding-left: 20px;
+    color: black;
+    width: 100%;
+    .list_wrappers {
+      display: flex;
+      justify-content: space-between;
+      .list_containers {
+        flex-direction: row;
+        .head_wrappers {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .head_texts {
+            font-size: 20px;
+          }
+        }
+        .key_wrappers {
+          display: flex;
+          height: 150px;
+          border-radius: 20px;
+          min-width: 150px;
+          border-width: 2px;
+          background-color: white;
+          margin-top: 20px;
+          justify-content: center;
+          align-items: center;
+          .key_texts {
+            font-size: 50px;
+            font-weight: bold;
+            color: #734f96;
+          }
+        }
+      }
+    }
+
+    .index_wrapper {
+      width: 100px;
+      .index {
+        width: 50px;
+        padding: 10px;
+      }
+    }
+    .name_wrapper {
+      width: 600px;
+
+      .name {
+        font-weight: 800;
+      }
+    }
+    .email_wrapper {
+      width: 600px;
+    }
+    .action_btn_wrapper {
+      // width: 150px;
+      .action_btn {
+        // background-color: #07bc0c;
+        height: 50px;
+        padding: 15px;
+        border-radius: 16px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebecf0;
+        .icon-wrapper {
+          padding-right: 7px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+// .action_wrapper {
+//   width: 250px;
+// }
+.actions_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+.heading {
+  font-weight: 400 !important;
+  color: #b2b3bd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,77 @@
+@import "../../index.scss";
+
+.add_container {
+  background-color: $white;
+  border-radius: 24px;
+  .add_wrapper {
+    margin: 1em 0em;
+    .add_head_container {
+      .title_container {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 1em;
+      }
+      .add_head_wrapper {
+        display: flex;
+        padding: 2em 1em;
+        .add_head_right_container {
+          flex: 0.2;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 2em;
+          .add_head_nav_icon_wrapper {
+            display: flex;
+            justify-content: center;
+            .add_head_nav_icon {
+              padding-right: 1em;
+            }
+          }
+        }
+      }
+    }
+    .add_field_body_container {
+      .add_field_body_wrapper {
+        margin: 1em;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 10px;
+        .add_field_checkbox__container {
+          align-items: center;
+          display: flex;
+          gap: 10px;
+          padding-left: 18px;
+          font-size: 20px;
+          color: $text-light;
+          padding-top: 20px;
+        }
+        .add_field_container {
+          margin: 0em 1em;
+          min-width: 200px;
+          .additional_field{
+            font-size: 12px;
+            padding-top: 10px;
+          }
+          .add_field_label {
+            color: $text-light;
+          }
+          .add_file {
+            width: 150px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+        .title_container {
+          margin-left: 15px;
+          margin-top: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .remarks_wrapper {
+    height: 55px;
+  }
+}

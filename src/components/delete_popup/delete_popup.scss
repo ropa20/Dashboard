@@ -1,0 +1,40 @@
+.popup_container {
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+  min-height: 200px;
+  margin: 0.5em;
+  .text_wrapper {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    .button_left {
+      padding-right: 1em;
+    }
+    .button_right {
+    }
+  }
+  .cancel_booking_text {
+    padding: 0;
+    height: 50px;
+    width: 340px;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, 0.15);
+    background-color: white;
+    font-size: 16px;
+    border-width: 0px;
+    border-bottom-width: 1px;
+  }
+  .error_message {
+    color: red;
+    padding-top: 5px;
+  }
+}

@@ -1,0 +1,29 @@
+
+.modal_wrapper {
+    min-height: 30vh;
+    min-width: 30vw;
+    .details_wrapper {
+      padding-top: 30px;
+      .input {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    .button_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .button {
+        width: 200px;
+        background-color: greenyellow;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+      }
+    }
+  }
+  

@@ -1,0 +1,141 @@
+$chatPrimary: #29242A;
+$chatText: #ffffff;
+$chatList: #2F2A30;
+$sendBackground: #0176FF;
+
+.conversation_component {
+  width: 100%;
+  height: 100%;
+  .conversation_container {
+    width: 100%;
+    height: 100%;
+    .conversation_component_wrapper {
+      width: 100%;
+      height: 100%;
+      .user_profile_header_container {
+        height: 8%;
+        border-bottom: 2px solid $chatPrimary;
+        .user_profile_header_wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.8em;
+          .user_profile {
+            display: flex;
+            align-items: center;
+            .user_profile_pic {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+            }
+            .profile_name {
+              padding-left: 1em;
+              font-size: 20px;
+            }
+          }
+          .conversation_action_container {
+            .action_content {
+              position: relative;
+              .menu_icon {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+              }
+              .action_wrap {
+                position: absolute;
+                right: 15px;
+                width: 200px;
+                padding: 0.5em 1em;
+                margin: 1em 0;
+                background-color: $chatList;
+                -webkit-box-shadow: 1px 1px 23px -2px #000000; 
+                box-shadow: 1px 1px 23px -2px #000000;
+                .action_item_container{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 1em 0.5em;
+                  cursor: pointer;
+                  .menu_icons {
+                    width: 20px;
+                    height: 20px;
+                  }
+                  .action_name {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .chats {
+        width: 100%;
+        height: 92%;
+        overflow: scroll;
+        padding: 1em;
+        .conversation {
+          width: 100%;
+          display: flex;
+          padding: 1em;
+          margin: 1em 0;
+          background-color: $chatPrimary;
+          justify-content: flex-start;
+          align-items: center;
+          border-radius: 10px;
+          cursor: pointer;
+      //       -webkit-box-shadow: 0px 0px 8px 1px $chatText;
+      //  -moz-box-shadow: 0px 0px 8px 1px $chatText;
+      //       box-shadow: 0px 0px 8px 1px $chatText;
+          .profile_picture {
+            .profile_pic {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+            }
+          }
+          .profile_name {
+            padding: 0.5em 0.5em 0.5em 1em;
+            width: 100%;
+            .profile_name_details {
+              display: flex;
+              justify-content: space-between;
+              .name {
+                width: 70%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 18px;
+                font-weight: 700;
+                padding-bottom: 0.5em;
+              }
+            }
+            .last_message {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+        .conversation_border {
+          border: 1px solid $chatText;
+      //       -webkit-box-shadow: 0px 0px 8px 1px $chatText;
+      //  -moz-box-shadow: 0px 0px 8px 1px $chatText;
+      //       box-shadow: 0px 0px 8px 1px $chatText;
+        }
+      }
+      .chats::-webkit-scrollbar {
+        display: none;
+      }
+      .empty_conversation {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

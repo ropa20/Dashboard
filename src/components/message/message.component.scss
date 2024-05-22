@@ -1,0 +1,477 @@
+$chatPrimary: #29242A;
+$chatText: #ffffff;
+$chatList: #2F2A30;
+$sendBackground: #0176FF;
+
+.message_component {
+  width: 100%;
+  height: 100%;
+  // padding: 1em;
+  .message_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .message_component_wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .empty_message {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .warning_text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .text_input_container {
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        bottom: 0;
+        width: 100%;
+
+        .text_box {
+          width: 90%;
+          input {
+            height: 60px;
+            font-size: 20px;
+            outline: none;
+            width: 100%;
+            padding: 1em;
+            background-color: $chatList;
+            color: $chatText;
+            border: none;
+          }
+        }
+        .submit_btn {
+          button{
+            height: 30px;
+            width: 100px;
+          }
+          .send_msg_btn {
+            width: 60px;
+            height: 60px;
+            background-color: $sendBackground;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .send_msg_icon {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+      .delete_message_container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: $chatList;
+        .delete_message_content {
+          width: 100%;
+          .delete_message {
+            display: flex;
+            justify-content: space-between;
+            .cancel_delete_container {
+              display: flex;
+              align-items: center;
+              padding: 1em 2em;
+              .cancel_delete_icon {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+              }
+              .selected_count {
+                padding: 0.5em 1em;
+              }
+            }
+            .delete_message_icon {
+              padding: 1em 2em;
+              display: flex;
+              align-items: center;
+              .delete_icon {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .messages {
+        width: 100%;
+        height: 85%;
+        // padding: 1em;
+        .message_lists {
+          width: 100%;
+          height: 100%;
+          padding: 0 1em;
+          overflow-y: scroll;
+          .send_message_container {
+            // width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            // align-self: flex-end;
+            width: 100%;
+            .message_content {
+              margin: 1em 0;
+              max-width: 70%;
+              display: flex;
+              .message_text {
+                cursor: pointer;
+                line-height: 1.5em;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 1em;
+                background-color: $sendBackground;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+              }
+              .check_box {
+                width: 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .tick_image_container {
+                  cursor: pointer;
+                  width: 20px;
+                  height: 20px;
+                  margin: 0.3em 0.3em 0 0.3em;
+                  border-radius: 50%;
+                  background-color: $chatPrimary;
+                  border: 1px solid $chatText;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .tick_icon {
+                    width: 15px;
+                    height: 15px;
+                  }
+                }
+                .background_blue {
+                  background-color: $sendBackground;
+                  border: none;
+                }
+              }
+            }
+          }
+          .received_message_container {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            .message_content {
+              margin: 1em 0;
+              max-width: 70%;
+              display: flex;
+              .message_text {
+                cursor: pointer;
+                line-height: 1.5em;
+                font-size: 20px;
+                font-weight: 500;
+                padding: 1em;
+                background-color: $chatList;
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+              }
+              .check_box {
+                width: 30px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .tick_image_container {
+                  cursor: pointer;
+                  width: 20px;
+                  height: 20px;
+                  margin: 0.3em 0.3em 0 0.3em;
+                  border-radius: 50%;
+                  background-color: $chatPrimary;
+                  border: 1px solid $chatText;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  .tick_icon {
+                    width: 15px;
+                    height: 15px;
+                  }
+                }
+                .background_blue {
+                  background-color: $sendBackground;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+        .message_lists::-webkit-scrollbar {
+          display: none;
+        }
+        .message_conversation_header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: $chatList;
+          // border-bottom: 1px solid $chatText;
+          // box-shadow: 0 6px 6px -6px $chatText;
+//           box-shadow: 2px 12px 13px -3px $chatText;
+// -webkit-box-shadow: 2px 12px 13px -3px $chatText;
+// -moz-box-shadow: 2px 12px 13px -3px $chatText;
+          padding: 1em;
+          z-index: 10000000;
+          .personal_details {
+            // padding: 0.5em;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .profile {
+              .profile_pic {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+            }
+            .profile_details {
+              padding: 0 1em;
+              .profile_name {
+                font-size: 18px;
+                font-weight: 700;
+              }
+            }
+          }
+          .profile_actions {
+            width: 50px;
+            height: 50px;
+            padding: 0.8em 0.8em;
+            position: relative;
+            .menu_icon {
+              width: 100%;
+              cursor: pointer;
+            }
+            .profile_action_container {
+              position: absolute;
+              right: 0;
+              padding: 1em 1.5em 0 0;
+              .profile_action_items {
+                width: 200px;
+                padding: 0.5em 0;
+                background-color: $chatList;
+                -webkit-box-shadow: 1px 1px 23px -2px #000000; 
+                box-shadow: 1px 1px 23px -2px #000000;
+                .action_option {
+                  padding: 0.5em;
+                  margin: 0.8em;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .example-enter {
+      opacity: 0.01;
+    }
+    
+    .example-enter.example-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+    
+    .example-leave {
+      opacity: 1;
+    }
+    
+    .example-leave.example-leave-active {
+      opacity: 0.01;
+      transition: opacity 300ms ease-in;
+    }
+
+    .group_info {
+      width: 40%;
+      border-left: 2px solid $chatPrimary;
+      background-color: $chatList;
+      // transition:left 1s;
+      // display: none;
+      // transform: translate(0);
+
+      .group_info_container {
+        height: 100%;
+        .group_info_header_container {
+          padding: 2em;
+          display: flex;
+          border-bottom: 2px solid $chatPrimary;
+          // align-items: center;
+          // justify-content: center;
+          .group_info_close_icon {
+            width: 20px;
+            height: 20px;
+            border-right: 50%;
+            cursor: pointer;
+          }
+          .group_info_head {
+            font-size: 18px;
+            padding-left: 1em;
+            font-weight: 600;
+          }
+        }
+
+        .contact_info_body {
+          background-color: $chatPrimary;
+          height: 92%;
+          overflow-y: scroll;
+          .contact_container {
+            height: 100%;
+            .contact_details {
+              // padding: 1em 0;
+              background-color: $chatList;
+              margin-bottom: 0.3em;
+              .profile_img {
+                padding: 2em 1em;
+                display: flex;
+                justify-content: center;
+                .contact_info_profile {
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 50%;
+                }
+              }
+              .profile_name_details {
+                padding: 1.5em;
+                .profile_name {
+                  padding: 0.5em 0;
+                  font-size: 18px;
+                  font-weight: 600;
+                }
+                .profile_created_at {
+                  padding: 0.5em 0;
+
+                }
+                .profile_last_seen {
+                  padding: 0.5em 0;
+
+                }
+              }
+            }
+            .group_members_list_container {
+              // margin-bottom: 0.3em;
+              .group_members {
+                background-color: $chatList;
+                padding: 1em 1.5em 0 1.5em;
+                margin-bottom: 0.3em;
+                .members_head {
+                  font-size: 18px;
+                  font-weight: 600;
+                  padding-bottom: 0.5em;
+                }
+                .member_details_container {
+                  padding-top: 0.5em;
+                  .member_details {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // margin: 1em 0;
+                    // padding: 1em 0;
+                    // background-color: $chatPrimary;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    .member_profile {
+                      padding: 0.3em;
+                      width: 25%;
+                      .member_pic {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                      }
+                    }
+                    .member_detail {
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: flex-start;
+                      border-bottom: 1px solid #c9c9c7;
+                      padding: 0.8em 0;
+                      width: 75%;
+                      // align-items: center;
+                      .member_name {
+                        padding: 0.5em;
+                      }
+                      .added_at {
+                        padding: 0.5em;
+                      }
+                    }
+                  }
+                }
+              }
+              .leave_group_container {
+                width: 100%;
+                // height: 20px;
+                padding: 1em 1.5em;
+                background-color: $chatList;
+                .leave_group_btn_container {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  width: 100%;
+                  background-color: $chatPrimary;
+                  padding: 1em;
+                  cursor: pointer;
+                  border: 1px solid $chatText;
+                  border-radius: 15px;
+                  .leave_group_icon {
+                    width: 30px;
+                    height: 30px;
+                  }
+
+                  .leave_group_btn_text {
+                    font-size: 20px;
+                    padding-left: 1em;
+                  }
+                }
+              }
+            }
+            .private_contact_info {
+              height: 100%;
+              background-color: $chatList;
+              .private_button_container {
+                .private_button_block {
+                  padding: 1em;
+                  border-bottom: 0.3em solid $chatPrimary;
+                  .private_button {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 1em;
+                    background-color: $chatPrimary;
+                    cursor: pointer;
+                    border: 1px solid $chatText;
+                    border-radius: 15px;
+                    // .block_icon {
+                    //   width: 30px;
+                    //   height: 30px;
+                    // }
+                    .private_button_icon {
+                      width: 22px;
+                      height: 22px;
+                    }
+                    .btn_text {
+                      padding-left: 1em;
+                      font-size: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

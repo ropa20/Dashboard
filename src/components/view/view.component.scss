@@ -1,0 +1,55 @@
+@import '../../index.scss';
+
+.view_container {
+  background-color: $white;
+  border-radius: 24px;
+  .view_wrapper {
+    .view_head_container {
+      .view_head_wrapper {
+        display: flex;
+        padding: 2em 1em;        
+        .view_head_right_container {
+          flex: 0.2;
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 2em;
+          .view_head_nav_icon_wrapper {
+            display: flex;
+            justify-content: center;
+            .view_head_nav_icon {
+              padding-right: 1em;
+            }
+          }
+        }
+      }
+    }
+    .view_field_body_container {
+      .view_field_body_wrapper {
+        margin: 1em;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        padding: 10px;
+        .view_field_container {
+          margin: 1em;
+          min-width: 200px;
+          .view_field_label {
+            color: $text-light;
+          }
+          .view_file {
+            width: 150px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+        }
+        .title_container {
+          margin-left: 15px;
+          margin-top: 20px;
+          font-size: 16px;
+        }
+      }
+    }    
+  }
+}
