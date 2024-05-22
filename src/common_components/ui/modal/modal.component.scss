@@ -1,0 +1,11 @@
+@import '../../../index.scss';
+
+.custom_modal {
+  border-radius: 16px;
+  overflow: scroll;
+}
+@media only screen and (max-height: 600px) {
+  .react-responsive-modal-modal {
+   height: 550px !important;
+  }
+}

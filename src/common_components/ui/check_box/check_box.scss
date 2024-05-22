@@ -1,0 +1,21 @@
+@import "../../../index.scss";
+
+.checkbox {
+  background: $secondary;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.checked_icon_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    cursor: pointer;
+  }
+}

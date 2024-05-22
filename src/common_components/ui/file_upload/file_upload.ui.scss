@@ -1,0 +1,106 @@
+@import '../../../index.scss';
+
+.file_upload_container {
+  .file_upload_wrapper {
+    .label_container {
+      .label {
+        color: $text-light;
+        padding: 0.5em 0em;
+      }
+    }
+    .file_upload_input_container {
+      border: $uiBorder solid $border;
+      border-radius: $uiBorderRadius;
+      .file_upload_input_wrapper {
+        display: flex;
+        .file_upload_input_left_container {
+          flex: 0.9;
+          height: $uiHeight;
+          display: flex;
+          align-items: center;
+          .file_upload_logo_container {
+            margin: 0em 0.5em;
+            background-color: $border;
+            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .file_upload_logo {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .file_upload_button_container {
+            position: relative;
+            width: fit-content;
+            .upload_button_input {
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+            }
+            .file_upload_button {
+              height: 32px;
+              outline: none;
+              background-color: $white;
+              border: $uiBorder solid $primary;
+              border-radius: 8px;
+              color: $primary;
+              padding: 0em 0.5em;
+            }
+          }
+
+          .file_upload_message_container {
+            .file_upload_message {
+              color: $text-light;
+              padding-left: 1em;
+            }
+          }
+        }
+        .file_upload_input_right_container {
+          flex: 0.1;
+          display: flex;
+          align-items: center;
+          .file_upload_view_container {
+            padding: 0em 1em;
+            justify-content: flex-end;
+            .action_button_container {
+              .action_btn_wrapper {
+                .action_btn {
+                  width: 36px;
+                  height: 36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.view_file_container {
+  max-width: 80vw;
+  height: 80vh;
+  padding-top: 50px;
+  .view_file {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+.view_file_error_container {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .view_file_error {
+  }
+}

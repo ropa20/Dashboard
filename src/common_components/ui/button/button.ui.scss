@@ -1,0 +1,18 @@
+@import "../../../index.scss";
+
+.button_container {
+  .button {
+    height: $uiHeight;
+    background-color: #734f96;
+    border: $uiBorder solid;
+    border-radius: 16px;
+    min-width: 166px;
+    color: $white;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .button_wide {
+    width: 100%;
+  }
+}

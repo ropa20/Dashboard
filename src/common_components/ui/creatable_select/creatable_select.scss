@@ -1,0 +1,11 @@
+@import '../../../index.scss';
+
+.select_container {
+    margin: 0.5em;
+  .select_label {
+    font-size: 14px;
+    font-weight: 500;
+    color: $gray-dark;
+    padding: 0.5em 0em;
+  }  
+}

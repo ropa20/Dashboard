@@ -1,0 +1,22 @@
+.google_picker_container {
+  .button_container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .map_picker_container {
+   height: 400px !important;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .google_maps {
+   height: 420px !important;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .button_container {
+    margin: 20px !important;
+  }
+}

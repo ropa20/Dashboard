@@ -1,0 +1,62 @@
+@import '../../../index.scss';
+
+.input_container {
+  .input {
+    width: 100%;
+    height: $uiHeight;
+    border: $uiBorder solid $border;
+    border-radius: $uiBorderRadius;
+    padding-left: 1em;
+    outline: none;
+    background-color: $border;
+  }
+  .input_textarea {
+    height: 100px;
+    padding: 0.5em;
+  }
+  .input:focus {
+    border: $uiBorder solid $primary;
+    border-radius: $uiBorderRadius;
+    background-color: $white;
+  }
+  .input_wide {
+    width: 98%;
+  }
+  .input_short {
+    width: fit-content;
+  }
+  .label_container {
+    color: $text-light;
+    padding: 0.5em 0em;
+  }
+  .date-picker{
+    width: 100%;
+    height: $uiHeight;
+    border: $uiBorder solid $border;
+    border-radius: $uiBorderRadius;
+    padding-left: 1em;
+    outline: none;
+    background-color: $border;
+  }
+        .field_wrap {
+          .password_wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            border: $uiBorder solid $border;
+            border-radius: $uiBorderRadius;
+            outline: none;
+            background-color: $border;
+            position: relative;
+    
+            .pwd_icon {
+              position: absolute;
+              right: 0;
+              padding-top: 15px;
+              padding-right: 10px;
+            }
+          }
+        }
+  
+
+}
