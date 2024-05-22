@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+@media print {
+  html, body {
+    height:100%; 
+    margin: 0 !important; 
+    padding: 0 !important;
+    overflow: hidden;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #11142d;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+input {
+  font-family: "Poppins";
+}
+
+button {
+  font-family: "Poppins";
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.h1 {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 600;
+}
+.h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.h4 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.h5 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.d1 {
+  font-size: 96px;
+  font-weight: 600;
+}
+.d2 {
+  font-size: 72px;
+  font-weight: 600;
+}
+.d3 {
+  font-size: 64px;
+  font-weight: 600;
+}
+.caption1 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.caption2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.body1 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.body2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.button {
+  font-size: 14px;
+  font-weight: 700;
+}
+.button2 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd1 {
+  padding: 1em;
+}
+.pd2 {
+  padding: 2em;
+}
+.pdl1 {
+  padding-left: 1em;
+}
+.pdr1 {
+  padding-right: 1em;
+}
+.pdl2 {
+  padding-left: 2em;
+}
+.pdr2 {
+  padding-right: 2em;
+}

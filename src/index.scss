@@ -1,0 +1,61 @@
+$text: #11142d;
+$text-light: #808191;
+$text-lightmode: #b2b3bd;
+$primary: #734f96;
+$secondary: #0049c6;
+$accent: #ffa2c0;
+$accent2: #ffce73;
+$green: #e6e6fa;
+$green2: #a5cea1;
+$green-light: #e0e9da;
+$dark: #1b1d21;
+$deactive: #808191;
+$border: #e4e4e4;
+$white: #ffffff;
+$shadow: #e3e6ec;
+$red: #ff754c;
+$red-light: #fff6f3;
+$link: #5f75ee;
+$headline: #1b089a;
+$background: #c3c3c3;
+$background-light: #fafafa;
+$button-color: #fafafa;
+$button-background: #808191;
+$table-line: #00000008;
+
+//ui
+$uiHeight: 56px;
+$uiBorder: 2px;
+$uiBorderRadius: 8px;
+$uiInputBorder: 2px solid $border;
+$boxShadow: 0px 0px 50px 10px $dark;
+$h6: 18px;
+$h5: 24px;
+$h4: 32px;
+$h3: 40px;
+$h2: 48px;
+$h1: 56px;
+
+//media query
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  $uiHeight: 56px;
+  $uiBorder: 2px;
+  $uiBorderRadius: 8px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

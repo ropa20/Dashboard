@@ -1,0 +1,62 @@
+const generateConfig = {
+  moduleName: 'User',
+  routeVersion: 'v1',
+  parameters: [
+    {
+      name: 'email',
+      sensitive: false,
+      type: 'String',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: true,
+      isEditable: true,
+    },
+    {
+      name: 'user_type',
+      sensitive: false,
+      type: 'String',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: true,
+      isEditable: true,
+    },
+    {
+      name: 'profile_picture',
+      sensitive: false,
+      type: 'String',
+      isUploadable: true,
+      isRequired: true,
+      isSearchable: true,
+      isEditable: true,
+    },
+    {
+      name: 'role',
+      sensitive: false,
+      type: 'String',
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: false,
+    },
+    {
+      name: 'phone',
+      sensitive: false,
+      type: 'String',
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: false,
+    },
+    {
+      name: 'username',
+      sensitive: false,
+      type: 'String',
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: false,
+    },
+  ],
+};
+
+module.exports = generateConfig;

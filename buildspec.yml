@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+   commands:
+      - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then exit 1; fi"
+      - echo Build stage successfully completed on `date`
+      - aws cloudfront create-invalidation --distribution-id 'E26LQF4JQR2MQ3' --paths '/*'
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: build

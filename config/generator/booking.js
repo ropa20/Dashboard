@@ -1,0 +1,76 @@
+const generateConfig = {
+  moduleName: "Booking",
+  routeVersion: "v1",
+  parameters: [
+    {
+      name: "store",
+      sensitive: false,
+      type: "String",
+      ref: 'store',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "delivery_address",
+      sensitive: false,
+      type: "String",
+      ref: 'address',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "driver",
+      sensitive: false,
+      type: "String",
+      ref: 'driver',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "booking_id",
+      sensitive: false,
+      type: "String",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "status",
+      sensitive: false,
+      type: "String",
+      ref: 'status',
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "emergency",
+      sensitive: false,
+      type: "Object",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "emergency_driver",
+      sensitive: false,
+      type: "Object",
+      ref: 'driver',
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    }
+  ]
+}
+
+module.exports = generateConfig;

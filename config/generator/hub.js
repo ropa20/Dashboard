@@ -1,0 +1,73 @@
+const generateConfig = {
+  moduleName: "Hub",
+  routeVersion: "v1",
+  parameters: [
+    {
+      name: "name",
+      sensitive: false,
+      type: "String",
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: true,
+      isEditable: true,
+    },
+    {
+      name: "address",
+      sensitive: false,
+      type: "String",
+      ref: 'address',
+      isUploadable: false,
+      isRequired: true,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "total_chargers",
+      sensitive: false,
+      type: "Number",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "available_chargers",
+      sensitive: false,
+      type: "Number",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "total_vehicles",
+      sensitive: false,
+      type: "Number",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "available_vehicles",
+      sensitive: false,
+      type: "Number",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+    {
+      name: "hub_incharge",
+      sensitive: false,
+      type: "String",
+      ref: "user",
+      isUploadable: false,
+      isRequired: false,
+      isSearchable: false,
+      isEditable: true,
+    },
+  ]
+}
+
+module.exports = generateConfig;

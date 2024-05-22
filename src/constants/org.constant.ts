@@ -1,0 +1,4 @@
+export enum ORG_TYPE {
+  DEDICATED = 'DEDICATED',
+  DYNAMIC = 'DYNAMIC'
+} 

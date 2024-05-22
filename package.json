@@ -1,0 +1,103 @@
+{
+  "name": "react-base",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@react-google-maps/api": "^2.12.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.22",
+    "@types/react": "^17.0.41",
+    "@types/react-dom": "^17.0.14",
+    "@types/react-redux": "^7.1.23",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/socket.io-client": "^1.4.36",
+    "@wojtekmaj/react-daterange-picker": "^4.2.0",
+    "awesome-debounce-promise": "^2.1.0",
+    "axios": "^0.26.1",
+    "chart.js": "^2.9.3",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.1.10",
+    "moment": "^2.29.1",
+    "node-sass": "7.0.1",
+    "papaparse": "^5.4.0",
+    "react": "^17.0.2",
+    "react-async-hook": "^4.0.0",
+    "react-chartjs-2": "^2.9.0",
+    "react-csv": "^2.2.2",
+    "react-datepicker": "^4.7.0",
+    "react-dom": "^17.0.2",
+    "react-google-autocomplete": "^2.7.0",
+    "react-google-map-picker": "^1.2.3",
+    "react-google-maps": "^9.4.5",
+    "react-hot-toast": "^2.4.0",
+    "react-places-autocomplete": "^7.3.0",
+    "react-qrcode-logo": "^2.8.0",
+    "react-redux": "^7.2.6",
+    "react-responsive-modal": "^6.2.0",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.3.0",
+    "react-switch": "^7.0.0",
+    "react-toastify": "^9.0.1",
+    "react-uuid": "^1.0.2",
+    "redux": "^4.1.2",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.4.1",
+    "socket.io-client": "^4.4.1",
+    "typescript": "^4.6.2",
+    "use-constant": "^1.1.0",
+    "use-long-press": "^1.2.0",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js --ext .ts --ext .jsx --ext .tsx --ignore-pattern node_modules/",
+    "start": "react-scripts start",
+    "build": "REACT_APP_NODE_ENV=production react-scripts build",
+    "stage": "REACT_APP_NODE_ENV=stage react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "gen": "node generator/generate.js",
+    "format": "npx prettier --write"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.50.0",
+    "@types/react-datepicker": "^4.4.1",
+    "@types/recompose": "^0.30.10",
+    "@typescript-eslint/eslint-plugin": "5.16.0",
+    "@typescript-eslint/parser": "5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0"
+  },
+  "lint-staged": {
+    "./src/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write"
+    ]
+  }
+}
