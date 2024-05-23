@@ -1,7 +1,7 @@
-import path from 'path/posix';
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './history.component.scss';
+import path from "path/posix";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./history.component.scss";
 
 interface historyProps {
   name?: string;
@@ -10,12 +10,16 @@ interface historyProps {
 export default function History(props: historyProps) {
   const { name, path } = props;
   const navigate = useNavigate();
-  const pathArray = path ? path.split('/') : location.pathname.split('/');
+  const pathArray = path
+    ? path.split("/")
+    : window.location.pathname.split("/");
   name && (pathArray[pathArray.length - 1] = name);
   return (
     <div className="view_dashboard_history_container">
       <div className="view_dashboard_history_wrapper">
-        <div className="view_dashboard_back" onClick={() => navigate(-1)}>Back</div>
+        <div className="view_dashboard_back" onClick={() => navigate(-1)}>
+          Back
+        </div>
         {/* {pathArray.map(
           (path, index) =>
             path !== '' && (

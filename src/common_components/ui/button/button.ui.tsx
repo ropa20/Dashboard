@@ -1,6 +1,6 @@
-import Colors from 'imports/color.import';
-import React from 'react';
-import './button.ui.scss';
+import Colors from "imports/color.import";
+import React from "react";
+import "./button.ui.scss";
 
 interface ButtonProps {
   value: string;
@@ -15,8 +15,16 @@ interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-  const { value, onClick, className, loading, color, textColor, borderColor, buttonType } = props;
-  props;
+  const {
+    value,
+    onClick,
+    className,
+    loading,
+    color,
+    textColor,
+    borderColor,
+    buttonType,
+  } = props;
   return (
     <div className="button_container">
       <button
@@ -29,7 +37,8 @@ const Button = (props: ButtonProps) => {
         // @ts-ignore: Unreachable code error
         type={buttonType || "submit"}
         disabled={props.buttonDisabled}
-        onClick={onClick}>
+        onClick={onClick}
+      >
         {value}
       </button>
     </div>
@@ -37,8 +46,8 @@ const Button = (props: ButtonProps) => {
 };
 
 Button.defaultProps = {
-  className: '',
-  onClick: () => { },
+  className: "",
+  onClick: () => {},
   loading: false,
 };
 

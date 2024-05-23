@@ -1,9 +1,9 @@
 import Assets from "imports/assets.import";
 import React, { useEffect } from "react";
-import { withGoogleMap, GoogleMap, DirectionsRenderer, Marker } from "react-google-maps";
+// import { withGoogleMap, GoogleMap, DirectionsRenderer, Marker } from "react-google-maps";
 import { useSetState } from "utils/functions.utils";
 
-function Map({ origin, destination, icon,driverIcon }) {
+function Map({ origin, destination, icon, driverIcon }) {
   const [state, setState] = useSetState({
     directions: null,
   });
@@ -18,7 +18,7 @@ function Map({ origin, destination, icon,driverIcon }) {
     if (origin !== null && destination !== null) {
       directionsService.route(
         {
-          origin: new google.maps.LatLng(origin[0],origin[1]),
+          origin: new google.maps.LatLng(origin[0], origin[1]),
           destination: new google.maps.LatLng(destination[0], destination[1]),
           travelMode: google.maps.TravelMode.DRIVING,
         },
@@ -37,30 +37,30 @@ function Map({ origin, destination, icon,driverIcon }) {
     }
   };
 
-  const GoogleMapExample = withGoogleMap(props => (
-    <GoogleMap defaultCenter={{ lat: 13.0894, lng: 80.1948 }} defaultZoom={13}>
-      <Marker
-        position={new google.maps.LatLng(destination[0], destination[1])}
-        onClick={() => new google.maps.LatLng(destination[0], destination[1])}
-        icon={icon}
-      />
-      <Marker
-        position={new google.maps.LatLng(origin[0],origin[1])}
-        onClick={() => new google.maps.LatLng(origin[0],origin[1])}
-        icon={driverIcon}
-      />
-      <DirectionsRenderer
-        directions={state.directions}
-        defaultOptions={{
-          suppressMarkers: true,
-        }}
-      />
-    </GoogleMap>
-  ));
+  // const GoogleMapExample = withGoogleMap(props => (
+  //   <GoogleMap defaultCenter={{ lat: 13.0894, lng: 80.1948 }} defaultZoom={13}>
+  //     <Marker
+  //       position={new google.maps.LatLng(destination[0], destination[1])}
+  //       onClick={() => new google.maps.LatLng(destination[0], destination[1])}
+  //       icon={icon}
+  //     />
+  //     <Marker
+  //       position={new google.maps.LatLng(origin[0],origin[1])}
+  //       onClick={() => new google.maps.LatLng(origin[0],origin[1])}
+  //       icon={driverIcon}
+  //     />
+  //     <DirectionsRenderer
+  //       directions={state.directions}
+  //       defaultOptions={{
+  //         suppressMarkers: true,
+  //       }}
+  //     />
+  //   </GoogleMap>
+  // ));
 
   return (
     <div>
-      <GoogleMapExample containerElement={<div style={{ height: `900px`, width: "" }} />} mapElement={<div style={{ height: `100%` }} />} />
+      {/* <GoogleMapExample containerElement={<div style={{ height: `900px`, width: "" }} />} mapElement={<div style={{ height: `100%` }} />} /> */}
     </div>
   );
 }

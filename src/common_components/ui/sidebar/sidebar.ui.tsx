@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Assets from "imports/assets.import";
 import "./sidebar.ui.scss";
-import Functions, { ErrorMessage, toastifyError, useSetState } from "utils/functions.utils";
+import Functions, {
+  ErrorMessage,
+  toastifyError,
+  useSetState,
+} from "utils/functions.utils";
 import { Models } from "utils/imports.utils";
 import Divider from "../divider/divider.ui";
 import { ROLES } from "constants/user.constant";
@@ -260,7 +264,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar_container">
       <div className="sidebar_wrapper">
-        <div className="app_logo_caontainer">{/* <img src={Assets.fullfily} className="app_logo_image" alt="app_logo" /> */}</div>
+        <div className="app_logo_caontainer">
+          {/* <img src={Assets.fullfily} className="app_logo_image" alt="app_logo" /> */}
+        </div>
         <div className="sidebar_item_sroll">
           <div className="sidebar_city_filter_wrapper">
             <div>
@@ -268,7 +274,7 @@ const Sidebar = () => {
             </div>
             <div className="city_filter">
               <Select
-                theme={theme => ({
+                theme={(theme) => ({
                   ...theme,
                   borderRadius: 5,
                   colors: {
@@ -297,18 +303,27 @@ const Sidebar = () => {
             </div>
           </div>
           <div className="city_filter_divider"></div>
-          {adminNavigations.map(nav => {
+          {adminNavigations.map((nav) => {
             return (
               <>
                 <div
-                  className={`sidebar_item_container ${nav.label === state.active && "active"}`}
+                  className={`sidebar_item_container ${
+                    nav.label === state.active ? "active" : ""
+                  }`}
                   onClick={() => {
-                    navigate(`${nav.link}`), setState({ active: nav.label });
+                    navigate(nav.link); // Use semicolon instead of comma
+                    setState({ active: nav.label });
                   }}
                 >
                   <div className="sidebar_item_wrapper">
                     <div className="sidebar_icon_container">
-                      <img src={Assets[nav.icon]} width={22} height={22} className="sidebar_icon" alt="view" />
+                      <img
+                        src={Assets[nav.icon]}
+                        width={22}
+                        height={22}
+                        className="sidebar_icon"
+                        alt="view"
+                      />
                     </div>
                     <div className="sidebar_label_container">
                       <div className="sidebar_label">{nav.label}</div>
@@ -327,7 +342,13 @@ const Sidebar = () => {
           >
             <div className="sidebar_item_wrapper">
               <div className="sidebar_icon_container">
-                <img src={Assets.logout} width={25} height={25} className="sidebar_icon" alt="view" />
+                <img
+                  src={Assets.logout}
+                  width={25}
+                  height={25}
+                  className="sidebar_icon"
+                  alt="view"
+                />
               </div>
               <div className="sidebar_label_container">
                 <div className="sidebar_label">Logout</div>
