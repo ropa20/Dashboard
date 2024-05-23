@@ -1,0 +1,38 @@
+@import '../../index.scss';
+
+.view_head_left_container {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  .view_head_image_conatiner {
+    .view_head_image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+  }
+  .view_head_title_container {
+    .view_head_title_wrapper {
+      margin-left: 1em;
+      .view_head_title {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: 'Poppins';
+      }
+      .view_head_sub_title {
+        padding-top: 0.5em;
+        color: $text-lightmode;
+      }
+    }
+  }
+}
+.view_button_container {
+  .view_button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .view_button {
+      padding: 1em;
+    }
+  }
+}
