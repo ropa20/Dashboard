@@ -1,0 +1,63 @@
+@import "../../index.scss";
+
+// .view_head_left_container {
+//   flex: 0.8;
+//   display: flex;
+//   align-items: center;
+//   .view_head_image_conatiner {
+//     .view_head_image {
+//       width: 150px;
+//       height: 150px;
+//       border-radius: 50%;
+//     }
+//   }
+//   .view_head_title_container {
+//     .view_head_title_wrapper {
+//       margin-left: 1em;
+//       .view_head_title {
+//         font-size: 32px;
+//         font-weight: 600;
+//         font-family: "Poppins";
+//       }
+//       .view_head_sub_title {
+//         padding-top: 0.5em;
+//         color: $text-lightmode;
+//       }
+//     }
+//   }
+// }
+// .view_button_container {
+//   .view_button_wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .view_button {
+//       padding: 1em;
+//     }
+//   }
+//   .view_bookings{
+//     overflow-y: auto;
+//     .map_container {
+//       height: 100vh;
+//       width: 100vh;
+//       position: relative;
+//       // margin-bottom: 30px;
+//       // border-radius: 15px;
+//       // overflow: hidden;
+//       background-color:"red"
+//     }
+//   }
+// }
+.tracking_status_text{
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+.map_container {
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+  // background-color:red
+}

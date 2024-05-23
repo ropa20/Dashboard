@@ -1,0 +1,37 @@
+$chatPrimary: #29242A;
+$chatText: #ffffff;
+$chatList: #2F2A30;
+$sendBackground: #0176FF;
+
+.chat_screen_container {
+  width: 100%;
+  height: 100vh;
+  .chat_container {
+    width: 100%;
+    height: 100%;
+    background-color: $chatPrimary;
+    color: $chatText;
+    .chat_wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .conversation_wrapper {
+        width: 30%;
+        height: 100%;
+        // padding: 1em;
+        background-color: $chatList;
+        // overflow: auto;
+        border-right: 2px solid $chatPrimary;
+      }
+      .conversation_wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      .message_wrapper {
+        width: 100%;
+        height: 100%;
+        // margin: 1em;
+        // overflow-y: scroll;
+      }
+    }
+  }
+}

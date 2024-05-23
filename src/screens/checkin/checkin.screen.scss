@@ -1,0 +1,139 @@
+@import '../../index.scss';
+.checkin_screen {
+  height: 100%;
+  .header_container {
+    min-height: 100px;
+    margin-bottom: 2em;
+    .head {
+      color: $text;
+    }
+    .header_wrapper {
+      display: flex;
+      align-items: center;
+      .search_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center !important;
+        gap: 15px;
+        padding: 20px;
+        padding-right: 0;
+        .add_field_container {
+          width: 250px;
+        }
+        .add_user {
+          padding: 15px;
+          background-color: #6c5dd3;
+          border-radius: 16px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.view_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.delete_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+.delete_modal_container .react-responsive-modal-modal {
+  border-radius: 20px;
+}
+
+.checkin_screen_driver_count{
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-left: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .checkin_screen_driver_count_flex_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px
+  }
+  .checkin_screen_driver_count_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px
+    
+  }
+  .chekin_screen_driver_count_heading{
+    font-weight: 500;
+    font-size: 16px;
+    color: #11142d;
+  }
+  .checkin_screen_driver_count_list{
+    margin-top: 1px;
+    font-size: 16px;
+    color: #11142d;
+    font-weight: 300;
+  }
+  .driver_status_code_flex_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:25px;
+  }
+  .driver_staus_code_inline_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px
+  }
+  .driver_status_code_heading{
+    font-weight: 500;
+    font-size: 14px;
+    color: #11142d;
+  }
+  .driver_status_code_image{
+    margin-top: 1.5px;
+  }
+  
+}
+
+.checkin_filter_container {
+  margin-top:40px;
+  margin-bottom: 35px;
+
+
+  .checkin_filter_heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #11142d;
+  }
+  .checkin_filter_dropdown_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap !important;
+    flex-flow: row;
+    gap:25px
+  }
+  .checkin_filter_dropdown_item {
+    min-width: 250px;
+  }
+}
+
+.checkin_screen_export_button {
+  margin-top: 10px;
+}
+
+

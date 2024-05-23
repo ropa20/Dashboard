@@ -1,0 +1,179 @@
+@import '../../index.scss';
+.driver_screen {
+  height: 100%;
+  .header_container {
+    min-height: 100px;
+    margin-bottom: 2em;
+    .head {
+      color: $text;
+    }
+    .header_wrapper {
+      display: flex;
+      align-items: center;
+      .search_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        padding-right: 0;
+        align-items: center;
+        .add_user {
+          padding: 15px;
+          background-color: #6c5dd3;
+          border-radius: 16px;
+          color: white;
+        }
+      }
+    }
+    .driver_filters{
+      display: flex;
+      .button {
+        margin-right: 15px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .selected {
+        background-color: $green;
+        color: $button-color;
+      }
+    }
+  }
+  .driver_filter_container {
+    margin-top:20px;
+    margin-bottom: 35px;
+
+  
+    .driver_filter_heading {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 22px;
+      color: #11142d;
+    }
+    .driver_filter_dropdown_wrapper {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap !important;
+      flex-flow: row;
+      gap:25px
+    }
+    .driver_filter_dropdown_item {
+      min-width: 250px;
+    }
+  }
+}
+.view_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.delete_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+.delete_modal_container .react-responsive-modal-modal {
+  border-radius: 20px;
+}
+
+.reject_modal_container {
+  display: 'flex';
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 420px;
+  .reject_heading{
+    font-size: 22px;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 10px;
+    padding-bottom: 20px;
+  }
+
+  .reject_modal_document_content {
+     font-size: 16px;
+     font-family: 'Poppins';
+  }
+  .rejection_document_wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .rejection_textarea {
+    width: 400px;
+    height: 80px;
+  }
+  .rejection_textarea_wrapper {
+    outline: none;
+    border: 2px solid #e4e4e4;
+    background-color: #e4e4e4;
+  }
+  
+  .rejection_textarea_active {
+    outline: none;
+    border: 2px solid #549447;
+    background-color: #ffffff;
+  
+  }
+
+  .reject_modal_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    padding-bottom: 20px;
+
+  .reject_button {
+    cursor: pointer;
+    height:46px ;
+    border: 2px solid;
+    border-radius: 16px;
+    min-width: 166px;
+    background-color:  rgb(101, 148, 71);
+    color:rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .reject_cancel_button {
+    cursor: pointer;
+    height: 46px;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 16px;
+    min-width: 166px;
+    background-color: rgb(255, 246, 243);
+    color: rgb(255, 117, 76);
+    border-color: rgb(255, 255, 255);
+
+  }
+  
+
+  }
+ 
+}
+

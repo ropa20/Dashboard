@@ -1,0 +1,34 @@
+@import '../../index.scss';
+
+.auth_screen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  .auth_screen_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .auth_screen_left_container{
+      flex: 0.4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary;
+      height: 100%;
+      width: 100%;
+      .app_name_container{
+        padding-bottom:100px;
+        .app_name{
+          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+          font-size: 62px;
+          font-style: italic;
+          font-weight: 700;
+          color: $white;
+        }
+      }
+    }
+    .auth_screen_right_container{
+      flex: 0.6;
+    }
+  }
+}
