@@ -1,0 +1,96 @@
+@import '../../index.scss';
+
+.vehicle_screen {
+  height: 100%;
+  .header_container {
+    min-height: 100px;
+    margin-bottom: 2em;
+    .head {
+      color: $text;
+    }
+    .header_wrapper {
+      display: flex;
+      align-items: center;
+      .search_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        padding-right: 0;
+        align-items: center;
+        .add_user {
+          padding: 15px;
+          background-color: #6c5dd3;
+          border-radius: 16px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.view_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.delete_modal_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  .print_button{
+    padding-left: 100px;
+    padding-top: 10px;
+  }
+}
+.delete_modal_container .react-responsive-modal-modal {
+  border-radius: 20px;
+}
+.button_container{
+  text-align: center;
+}
+
+@media print {
+  .button_container {
+    display: none;
+  }
+  .delete_modal_container .react-responsive-modal-modal{
+    box-shadow: none;
+  }
+  .delete_modal_container .react-responsive-modal-modal .react-responsive-modal-closeButton {
+    display: none;
+  }
+}
+
+.vehicle_filter_container {
+  margin-top:20px;
+  margin-bottom: 35px;
+
+
+  .vehicle_filter_heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #11142d;
+  }
+  .vehicle_filter_dropdown_wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap !important;
+    flex-flow: row;
+    gap:25px
+  }
+  .vehicle_filter_dropdown_item {
+    min-width: 250px;
+  }
+}
+

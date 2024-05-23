@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+.add_logo_container {
+  margin: 2em;
+  .add_logo_wrapper {
+    .logo_label_container {
+      .logo_label {
+        padding: 1em 0;
+        color: $deactive;
+      }
+    }
+    .logo_wrapper {
+      display: flex;
+      align-items: center;
+      .logo_container {
+        padding-right: 2em;
+        .logo_image {
+          object-fit: cover;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .button_container {
+      padding-right: 0.5em;
+    }
+  }
+}
+.add_button_container {
+  .add_button_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .add_button {
+      padding: 1em;
+    }
+  }
+}
+.checkbox_heading {
+  font-family: 'Poppins';
+  font-size: 20px;
+  padding: 0 35px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  padding-top: 40px;
+  margin-left: -35px;
+}
+
+.checkbox_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  .checkbox_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+  }
+}
